@@ -10,7 +10,7 @@ jobs:
     steps:
       # 1️⃣ Get the code
       - name: Checkout 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       # 2️⃣ Install dependencies and lint JS
       - name: Install and lint 🔧
