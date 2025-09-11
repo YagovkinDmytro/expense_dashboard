@@ -1,6 +1,7 @@
 {
   "name": "expense_dashboard",
   "private": true,
+  "homepage": "https://github.com/YagovkinDmytro/expense_dashboard/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
