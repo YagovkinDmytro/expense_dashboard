@@ -10,3 +10,39 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Importing Components Using Alias @
+
+After configuring your `vite.config.js` with an alias:
+
+```
+resolve: {
+alias: {
+"@": path.resolve(__dirname, "./src"),
+},
+},
+```
+
+you can import components and modules using `@` as a shortcut for the `src/` folder.
+
+### Example
+
+Instead of using long relative paths:
+
+```
+import Button from "../../components/Button";
+import Dashboard from "../../pages/Dashboard";
+```
+
+you can write:
+
+```
+import Button from "@/components/Button";
+import Dashboard from "@/pages/Dashboard";
+```
+
+### Notes:
+
+- `@` points to the `src/` **folder**.
+- Works for **JS, JSX, TSX** files inside `src/`.
+- You can still use normal relative imports if you prefer.
