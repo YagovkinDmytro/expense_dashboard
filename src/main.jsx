@@ -6,7 +6,7 @@ import App from "./components/App.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter basename="/expense_dashboard">
+    <BrowserRouter basename="/React_Vite_template_for_GitHub_Pages">
       <App />
     </BrowserRouter>
   </StrictMode>

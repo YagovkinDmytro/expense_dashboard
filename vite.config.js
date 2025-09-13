@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig({
   plugins: [react()],
-  base: "/expense_dashboard/",
+  base: "/React_Vite_template_for_GitHub_Pages/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
